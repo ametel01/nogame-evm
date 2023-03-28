@@ -15,6 +15,7 @@ contract Resources {
 
     uint256 private resourceQued;
 
-    
-
+    constructor(address _noGameAddr) {
+        noGameAddr = _noGameAddr;
+    }
 }
