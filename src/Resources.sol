@@ -18,4 +18,24 @@ contract Resources {
     constructor(address _noGameAddr) {
         noGameAddr = _noGameAddr;
     }
+
+    function upgradeCost(address caller) public view returns(uint256 metalMine, uint256 crystalMine, uint256 deuteriumMine, uint256 SolarPlant) {
+        
+    }
+
+    function metalMineUpgrade(address caller) external returns (uint256 metalCost, uint256 crystalCost, uint256 timeUnlocked) {
+
+    }
+
+    function crystalMineUpgrade(address caller) external returns (uint256 metalCost, uint256 crystalCost, uint256 timeUnlocked) {
+
+    }
+
+    function deuteriumMineUpgrade(address caller) external returns (uint256 metalCost, uint256 crystalCost, uint256 timeUnlocked) {
+
+    }
+
+    function solarPlantUpgrade(address caller) external returns (uint256 metalCost, uint256 crystalCost, uint256 timeUnlocked) {
+
+    }
 }
