@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
+import {Utils} from "./libs/Utils.sol";
+
 contract Resources {
 
     address private noGameAddr;
@@ -17,15 +19,15 @@ contract Resources {
     //                                   EXTERNAL FUNCTIONS                                        #
     // ############################################################################################
 
-    function metalMineUpgrade(address caller) external returns (uint metalCost, uint crystalCost, uint timeUnlocked) {
+    function steelMineUpgrade(address caller) external returns (uint metalCost, uint crystalCost, uint timeUnlocked) {
 
     }
 
-    function crystalMineUpgrade(address caller) external returns (uint metalCost, uint crystalCost, uint timeUnlocked) {
+    function quarzMineUpgrade(address caller) external returns (uint metalCost, uint crystalCost, uint timeUnlocked) {
 
     }
 
-    function deuteriumMineUpgrade(address caller) external returns (uint metalCost, uint crystalCost, uint timeUnlocked) {
+    function tritiumMineUpgrade(address caller) external returns (uint metalCost, uint crystalCost, uint timeUnlocked) {
 
     }
 
@@ -51,13 +53,5 @@ contract Resources {
 
     function _solarBuildingCost(uint256 mineLevel) private returns(uint256 metalCost, uint256 crystalCost) {
         
-    }
-
-    function _getAvailableResources(address caller) private returns(uint metal, uint crystal, uint deuterium) {
-
-    }
-
-    function _checkEnoughResources(address caller, uint metalRequired, uint crystalRequired, uint deuteriumRequired) private {
-
     }
 }
