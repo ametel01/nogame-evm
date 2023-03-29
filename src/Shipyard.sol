@@ -5,28 +5,13 @@ import {Utils, Structs} from "./libs/Libraries.sol";
 
 contract Shipyard {
 
-    struct ShipsCosts {
-        Structs.Cost ligthTrasport;
-        Structs.Cost heavyTransport;
-        Structs.Cost debrisRemover;
-        Structs.Cost sniffer;
-        Structs.Cost satellite;
-        Structs.Cost swiftFighter;
-        Structs.Cost frigate;
-        Structs.Cost warship;
-    }
-
     address private noGameAddr;
 
     constructor(address _noGameAddr) {
         noGameAddr = _noGameAddr;
     }
 
-    function upgradesCost(address caller) public view returns(uint metalMine, uint crystalMine, uint deuteriumMine, uint SolarPlant) {
-        
-    }
-
-    function shipsCost() public view returns (ShipsCosts memory costs) {
+    function shipsCost() public view returns (Structs.ShipsCosts memory costs) {
 
     }
 
