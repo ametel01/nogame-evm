@@ -4,17 +4,6 @@ pragma solidity ^0.8.13;
 import {Utils, Structs} from "./libs/Libraries.sol";
 
 contract Defences {
-
-    struct DefenceCost {
-        Structs.Cost missileLauncher;
-        Structs.Cost lightPhotonGun;
-        Structs.Cost heavyPhotonGun;
-        Structs.Cost electronCannon;
-        Structs.Cost magneticCannon;
-        Structs.Cost plasmaProjector;
-        Structs.Cost smallEnergyField;
-        Structs.Cost largeEnergyField;
-    }
     
     address private noGameAddr;
 
@@ -22,7 +11,7 @@ contract Defences {
         noGameAddr = _noGameAddr;
     }
 
-    function defencesCosts() public view returns(DefenceCost memory costs) {
+    function defencesCosts() public view returns(Structs.DefenceCosts memory costs) {
 
     }
 
