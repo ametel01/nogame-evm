@@ -3,23 +3,13 @@ pragma solidity ^0.8.13;
 
 contract Resources {
 
-    uint private constant METAL_MINE = 41;
-    uint private constant CRYSTAL_MINE = 42;
-    uint private constant DEUTERIUM_MINE = 43;
-    uint private constant SOLAR_PLANT = 44;
-    
-
     address private noGameAddr;
-
-    uint private timeLock;
-
-    uint private resourceQued;
 
     constructor(address _noGameAddr) {
         noGameAddr = _noGameAddr;
     }
 
-    function upgradeCost(address caller) public view returns(uint metalMine, uint crystalMine, uint deuteriumMine, uint SolarPlant) {
+    function upgradesCost(address caller) public view returns(uint metalMine, uint crystalMine, uint deuteriumMine, uint SolarPlant) {
         
     }
 
@@ -68,6 +58,6 @@ contract Resources {
     }
 
     function _checkEnoughResources(address caller, uint metalRequired, uint crystalRequired, uint deuteriumRequired) private {
-        
+
     }
 }
