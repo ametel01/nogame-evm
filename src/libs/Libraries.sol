@@ -10,3 +10,11 @@ library Utils {
 
     }
 }
+
+library Structs {
+    struct Cost {
+        uint steel;
+        uint quarz;
+        uint tritium;
+    }
+}
