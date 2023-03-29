@@ -14,4 +14,3 @@ docs/
 .env
 *.code-workspace
 bin/
-lib/
