@@ -1,25 +1,19 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import {Utils} from "./libs/Utils.sol";
+import {Utils, Structs} from "./libs/Libraries.sol";
 
 contract Shipyard {
 
-    struct Cost {
-        uint steel;
-        uint quarz;
-        uint tritium;
-    }
-
     struct ShipsCosts {
-        Cost ligthTrasport;
-        Cost heavyTransport;
-        Cost debrisRemover;
-        Cost sniffer;
-        Cost satellite;
-        Cost swiftFighter;
-        Cost frigate;
-        Cost warship;
+        Structs.Cost ligthTrasport;
+        Structs.Cost heavyTransport;
+        Structs.Cost debrisRemover;
+        Structs.Cost sniffer;
+        Structs.Cost satellite;
+        Structs.Cost swiftFighter;
+        Structs.Cost frigate;
+        Structs.Cost warship;
     }
 
     address private noGameAddr;
@@ -40,31 +34,31 @@ contract Shipyard {
     //                                   EXTERNAL FUNCTIONS                                       #
     // ############################################################################################
 
-    function lightTransportBuild(address caller, uint units) external returns (Cost memory cost) {
+    function lightTransportBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
 
     }
 
-    function heavyTransportBuild(address caller, uint units) external returns (Cost memory cost) {
+    function heavyTransportBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
         
     }
 
-    function debrisRemoverBuild(address caller, uint units) external returns (Cost memory cost) {
+    function debrisRemoverBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
         
     }
 
-    function snifferBuild(address caller, uint units) external returns (Cost memory cost) {
+    function snifferBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
         
     }
 
-    function satelliteBuild(address caller, uint units) external returns (Cost memory cost) {
+    function satelliteBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
         
     }
 
-    function frigateBuild(address caller, uint units) external returns (Cost memory cost) {
+    function frigateBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
         
     }
 
-    function warshipBuild(address caller, uint units) external returns (Cost memory cost) {
+    function warshipBuild(address caller, uint units) external returns (Structs.Cost memory cost) {
         
     }
 
@@ -104,35 +98,35 @@ contract Shipyard {
         
     }
 
-    function _lightTransportCost(uint units) private returns(Cost memory const) {
+    function _lightTransportCost(uint units) private returns(Structs.Cost memory const) {
 
     }
 
-    function _heavyTransportCost(uint units) private returns(Cost memory const) {
+    function _heavyTransportCost(uint units) private returns(Structs.Cost memory const) {
         
     }
 
-    function _debrisRemoverCost(uint units) private returns(Cost memory const) {
+    function _debrisRemoverCost(uint units) private returns(Structs.Cost memory const) {
         
     }
 
-    function _snifferCost(uint units) private returns(Cost memory const) {
+    function _snifferCost(uint units) private returns(Structs.Cost memory const) {
         
     }
 
-    function _satelliteCost(uint units) private returns(Cost memory const) {
+    function _satelliteCost(uint units) private returns(Structs.Cost memory const) {
         
     }
 
-    function _swiftFighterCost(uint units) private returns(Cost memory const) {
+    function _swiftFighterCost(uint units) private returns(Structs.Cost memory const) {
         
     }
 
-    function _frigateCost(uint units) private returns(Cost memory const) {
+    function _frigateCost(uint units) private returns(Structs.Cost memory const) {
         
     }
     
-    function _warshipCost(uint units) private returns(Cost memory const) {
+    function _warshipCost(uint units) private returns(Structs.Cost memory const) {
         
     }
 }
